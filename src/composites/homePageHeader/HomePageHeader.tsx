@@ -1,7 +1,5 @@
 import LightDarkButton from "@/components/Mode/LightDarkButton";
 import React from "react";
-import AgentInfo from "../../";
-import { Link } from "react-router-dom";
 type Props = {};
 
 const HomePageHeader = (props: Props) => {

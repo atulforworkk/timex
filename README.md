@@ -1,1 +1,1 @@
-Hi i am trying to save your 60 second in the game by giving you random agent anyHow I am a newbie developer and trying to create something new 
+Hi I am trying to create a simple stopwatch 

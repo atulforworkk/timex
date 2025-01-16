@@ -7,7 +7,8 @@ const Testing = (props: Props) => {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
-    let interval;
+    let interval: ReturnType<typeof setInterval> | undefined;
+
 
     if (isRunning) {
       interval = setInterval(() => {
@@ -20,7 +21,7 @@ const Testing = (props: Props) => {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [isRunning]);
 
-  const formatTime = (time) => {
+  const formatTime = (time:number) => {
     const milliseconds = time % 1000;
     const seconds = Math.floor((time / 1000) % 60);
     const minutes = Math.floor((time / (1000 * 60)) % 60);

@@ -1,4 +1,3 @@
-import PostAuthHeader from "@/composites/postAuthHeader/PostAuthHeader";
 import { Outlet } from "react-router-dom";
 
 const PostAuthLayout = () => {
@@ -24,7 +23,6 @@ const PostAuthLayout = () => {
 
   return (
     <>
-      <PostAuthHeader />
       <Outlet />
     </>
   );
